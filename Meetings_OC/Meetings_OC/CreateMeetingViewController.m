@@ -11,6 +11,7 @@
 
 @interface CreateMeetingViewController ()
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UITextField *HeadingLabel;
 
 @end
 
@@ -27,6 +28,10 @@
     [UIView animateWithDuration:0.3 animations:^{
         self.containerView.transform = CGAffineTransformMakeTranslation(0, 0);
     }];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {

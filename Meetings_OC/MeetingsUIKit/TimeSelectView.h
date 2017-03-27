@@ -11,6 +11,7 @@
 @interface TimeSelectView : BaseXibView
 @property (nonatomic, assign, readonly) BOOL isShow;
 
++(instancetype)selectView;
 - (void)show;
 - (void)hidden;
 @end

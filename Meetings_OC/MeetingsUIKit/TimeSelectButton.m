@@ -29,7 +29,7 @@ IB_DESIGNABLE
         [self initFromXibForView:_contentView frame:^CGRect(CGRect frame) {
             return frame;
         }];
-        self.selectView = [[TimeSelectView alloc] init];
+        self.selectView = [TimeSelectView selectView];
     }
     return self;
 }
@@ -41,7 +41,7 @@ IB_DESIGNABLE
         [self initFromXibForView:_contentView frame:^CGRect(CGRect frame) {
             return frame;
         }];
-        self.selectView = [[TimeSelectView alloc] init];
+        self.selectView = [TimeSelectView selectView];
     }
     return self;
 }

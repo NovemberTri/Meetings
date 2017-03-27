@@ -7,13 +7,17 @@
 //
 
 #import "TimeSelectView.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 static CGFloat const kHeight = 275;
 
 @interface TimeSelectView ()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
-@property (strong, nonatomic) UIWindow *wrapWindow;
 
+@property (weak, nonatomic) IBOutlet UIView *indicator;
+@property (nonatomic, strong) CALayer *indicatorLayer;
+
+@property (strong, nonatomic) UIWindow *wrapWindow;
 @property (nonatomic, assign, readwrite) BOOL isShow;
 @end
 
@@ -21,31 +25,26 @@ static CGFloat const kHeight = 275;
 
 #pragma mark - initialized Method
 
++(instancetype)selectView{
+    static TimeSelectView *select = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        select = [[self alloc] init];
+        select.isShow = NO;
+    });
+    return select;
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        [self contentSetting];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
         self.frame = [self realBounds];
         [self contentSetting];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.frame = [[UIScreen mainScreen] bounds];
-        [self contentSetting];
+        [self indicatorSetting];
+        [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillShowNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+            [self hidden];
+        }];
     }
     return self;
 }
@@ -58,8 +57,14 @@ static CGFloat const kHeight = 275;
 
     _contentView.layer.shadowColor = [UIColor blackColor].CGColor;
     _contentView.layer.shadowOpacity = 0.1;
+}
 
-    _isShow = NO;
+- (void)indicatorSetting
+{
+    _indicatorLayer = [[CALayer alloc] init];
+    _indicatorLayer.frame = CGRectMake(10, 0, [UIScreen mainScreen].bounds.size.width/ 2 - 20, 2);
+    _indicatorLayer.backgroundColor = [UIColor redColor].CGColor;
+    [_indicator.layer addSublayer:_indicatorLayer];
 }
 
 #pragma mark - Utils
@@ -81,6 +86,16 @@ static CGFloat const kHeight = 275;
 
 
 #pragma mark - Actions
+
+- (IBAction)dateAction:(id)sender {
+    self.indicatorLayer.frame = CGRectMake(10, 0, [UIScreen mainScreen].bounds.size.width/ 2 - 20, 2);
+}
+
+- (IBAction)timeAction:(id)sender {
+    self.indicatorLayer.frame = CGRectMake([UIScreen mainScreen].bounds.size.width/ 2 + 10, 0, [UIScreen mainScreen].bounds.size.width/ 2 - 20, 2);
+}
+
+
 - (IBAction)cancelAction:(id)sender {
     [self hidden];
 }

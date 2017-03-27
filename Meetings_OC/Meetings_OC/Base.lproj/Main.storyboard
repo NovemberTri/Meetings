@@ -223,7 +223,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-85-SP9">
-                                        <rect key="frame" x="322" y="26" width="38" height="36"/>
+                                        <rect key="frame" x="322" y="26.5" width="38" height="36"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="Save">
                                             <color key="titleColor" red="0.97254901959999995" green="0.35686274509999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -237,6 +237,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="GEU-ic-QaF" id="Up1-Yc-Zbj"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pt-4c-SIh" customClass="TimeSelectButton">
                                         <rect key="frame" x="15" y="150" width="140" height="45"/>
@@ -296,6 +299,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="HeadingLabel" destination="02h-AO-dgR" id="RY2-BZ-4M9"/>
                         <outlet property="containerView" destination="1Ra-X0-t4B" id="4qS-aT-Q4t"/>
                     </connections>
                 </viewController>
