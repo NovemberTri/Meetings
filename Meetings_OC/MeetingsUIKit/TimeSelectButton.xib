@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeSelectButton">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="MB4-OW-Ygs"/>
+                <outlet property="titleLabel" destination="qCf-9y-tWG" id="sM9-zW-xeN"/>
+                <outlet property="wrapButton" destination="YMu-u5-OXi" id="aQc-8G-wgS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMu-u5-OXi">
+                    <rect key="frame" x="0.0" y="0.0" width="333" height="110"/>
+                    <connections>
+                        <action selector="action:" destination="-1" eventType="touchUpInside" id="OBc-iC-GSy"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCf-9y-tWG">
+                    <rect key="frame" x="0.0" y="0.0" width="333" height="110"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YMu-u5-OXi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4LL-k9-8V8"/>
+                <constraint firstAttribute="trailing" secondItem="qCf-9y-tWG" secondAttribute="trailing" id="7VD-Qy-kyt"/>
+                <constraint firstAttribute="bottom" secondItem="qCf-9y-tWG" secondAttribute="bottom" id="NZy-a5-YuG"/>
+                <constraint firstAttribute="trailing" secondItem="YMu-u5-OXi" secondAttribute="trailing" id="d2c-A0-QYY"/>
+                <constraint firstItem="qCf-9y-tWG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fbV-wE-QoE"/>
+                <constraint firstItem="qCf-9y-tWG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nFl-tv-X4k"/>
+                <constraint firstItem="YMu-u5-OXi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r9b-en-IPb"/>
+                <constraint firstAttribute="bottom" secondItem="YMu-u5-OXi" secondAttribute="bottom" id="yrF-Ip-EV2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130" y="-264"/>
+        </view>
+    </objects>
+</document>

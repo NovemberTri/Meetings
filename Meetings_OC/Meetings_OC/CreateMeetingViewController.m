@@ -7,6 +7,7 @@
 //
 
 #import "CreateMeetingViewController.h"
+#import "MeetingsUIKit.h"
 
 @interface CreateMeetingViewController ()
 @property (weak, nonatomic) IBOutlet UIView *containerView;

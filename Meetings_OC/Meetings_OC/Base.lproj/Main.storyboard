@@ -238,16 +238,46 @@
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pt-4c-SIh" customClass="TimeSelectButton">
+                                        <rect key="frame" x="15" y="150" width="140" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="rQJ-jo-xFA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Start"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleAlignment">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftt-dR-Ni8" customClass="TimeSelectButton">
+                                        <rect key="frame" x="220" y="150" width="140" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="End"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleAlignment">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="eXm-85-SP9" firstAttribute="baseline" secondItem="xZM-ud-HZv" secondAttribute="baseline" id="0FD-p8-ha7"/>
+                                    <constraint firstItem="ftt-dR-Ni8" firstAttribute="width" secondItem="9Pt-4c-SIh" secondAttribute="width" id="5xk-df-B22"/>
                                     <constraint firstAttribute="trailing" secondItem="eXm-85-SP9" secondAttribute="trailing" constant="15" id="AJN-mn-BAH"/>
                                     <constraint firstItem="xZM-ud-HZv" firstAttribute="centerY" secondItem="Dsv-sq-YdV" secondAttribute="centerY" id="BjC-3a-VrB"/>
+                                    <constraint firstItem="9Pt-4c-SIh" firstAttribute="top" secondItem="02h-AO-dgR" secondAttribute="bottom" constant="17" id="Bsq-gS-sKq"/>
+                                    <constraint firstItem="ftt-dR-Ni8" firstAttribute="trailing" secondItem="02h-AO-dgR" secondAttribute="trailing" id="G0q-C0-zSP"/>
                                     <constraint firstItem="Dsv-sq-YdV" firstAttribute="leading" secondItem="1Ra-X0-t4B" secondAttribute="leading" constant="10" id="Ia7-Nx-xRN"/>
+                                    <constraint firstItem="ftt-dR-Ni8" firstAttribute="leading" secondItem="9Pt-4c-SIh" secondAttribute="trailing" constant="65" id="Q7u-P8-YG7"/>
                                     <constraint firstItem="Dsv-sq-YdV" firstAttribute="top" secondItem="1Ra-X0-t4B" secondAttribute="top" constant="36" id="RL8-pK-2qC"/>
                                     <constraint firstItem="02h-AO-dgR" firstAttribute="centerX" secondItem="1Ra-X0-t4B" secondAttribute="centerX" id="YDe-FE-18z"/>
+                                    <constraint firstItem="ftt-dR-Ni8" firstAttribute="height" secondItem="9Pt-4c-SIh" secondAttribute="height" id="ZdF-e4-Ag8"/>
                                     <constraint firstItem="xZM-ud-HZv" firstAttribute="leading" secondItem="Dsv-sq-YdV" secondAttribute="trailing" constant="20" id="dyc-3c-RNf"/>
+                                    <constraint firstItem="ftt-dR-Ni8" firstAttribute="top" secondItem="9Pt-4c-SIh" secondAttribute="top" id="fnT-3d-gE5"/>
+                                    <constraint firstItem="9Pt-4c-SIh" firstAttribute="leading" secondItem="02h-AO-dgR" secondAttribute="leading" id="k3P-Rk-pvl"/>
                                     <constraint firstItem="02h-AO-dgR" firstAttribute="top" secondItem="xZM-ud-HZv" secondAttribute="bottom" constant="33.5" id="tJq-xt-bTS"/>
                                     <constraint firstItem="02h-AO-dgR" firstAttribute="leading" secondItem="1Ra-X0-t4B" secondAttribute="leading" constant="15" id="tYF-8f-FiC"/>
                                 </constraints>

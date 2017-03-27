@@ -23,6 +23,14 @@
 		B0131F281E7FE5DB0011A8C1 /* MeetingsUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B0131F181E7FE5DB0011A8C1 /* MeetingsUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0131F2B1E7FE5DB0011A8C1 /* MeetingsUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0131F161E7FE5DB0011A8C1 /* MeetingsUIKit.framework */; };
 		B0131F2C1E7FE5DB0011A8C1 /* MeetingsUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0131F161E7FE5DB0011A8C1 /* MeetingsUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0382AAB1E8896AD003F97A3 /* TimeSelectButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0382AAA1E8896AD003F97A3 /* TimeSelectButton.xib */; };
+		B0382AAE1E889908003F97A3 /* TimeSelectButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B0382AAC1E889908003F97A3 /* TimeSelectButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0382AAF1E889908003F97A3 /* TimeSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0382AAD1E889908003F97A3 /* TimeSelectButton.m */; };
+		B0382AB21E88C01D003F97A3 /* TimeSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = B0382AB01E88C01D003F97A3 /* TimeSelectView.h */; };
+		B0382AB31E88C01D003F97A3 /* TimeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0382AB11E88C01D003F97A3 /* TimeSelectView.m */; };
+		B0382AB51E88C02E003F97A3 /* TimeSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0382AB41E88C02E003F97A3 /* TimeSelectView.xib */; };
+		B0382ABC1E88D5C4003F97A3 /* BaseXibView.h in Headers */ = {isa = PBXBuildFile; fileRef = B0382ABA1E88D5C4003F97A3 /* BaseXibView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0382ABD1E88D5C4003F97A3 /* BaseXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0382ABB1E88D5C4003F97A3 /* BaseXibView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +114,14 @@
 		B0131F1E1E7FE5DB0011A8C1 /* MeetingsUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingsUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0131F251E7FE5DB0011A8C1 /* MeetingsUIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetingsUIKitTests.m; sourceTree = "<group>"; };
 		B0131F271E7FE5DB0011A8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0382AAA1E8896AD003F97A3 /* TimeSelectButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSelectButton.xib; sourceTree = "<group>"; };
+		B0382AAC1E889908003F97A3 /* TimeSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSelectButton.h; sourceTree = "<group>"; };
+		B0382AAD1E889908003F97A3 /* TimeSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSelectButton.m; sourceTree = "<group>"; };
+		B0382AB01E88C01D003F97A3 /* TimeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSelectView.h; sourceTree = "<group>"; };
+		B0382AB11E88C01D003F97A3 /* TimeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSelectView.m; sourceTree = "<group>"; };
+		B0382AB41E88C02E003F97A3 /* TimeSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSelectView.xib; sourceTree = "<group>"; };
+		B0382ABA1E88D5C4003F97A3 /* BaseXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXibView.h; sourceTree = "<group>"; };
+		B0382ABB1E88D5C4003F97A3 /* BaseXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXibView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +241,14 @@
 			isa = PBXGroup;
 			children = (
 				B0131F181E7FE5DB0011A8C1 /* MeetingsUIKit.h */,
+				B0382ABA1E88D5C4003F97A3 /* BaseXibView.h */,
+				B0382ABB1E88D5C4003F97A3 /* BaseXibView.m */,
+				B0382AAC1E889908003F97A3 /* TimeSelectButton.h */,
+				B0382AAD1E889908003F97A3 /* TimeSelectButton.m */,
+				B0382AAA1E8896AD003F97A3 /* TimeSelectButton.xib */,
+				B0382AB01E88C01D003F97A3 /* TimeSelectView.h */,
+				B0382AB11E88C01D003F97A3 /* TimeSelectView.m */,
+				B0382AB41E88C02E003F97A3 /* TimeSelectView.xib */,
 				B0131F191E7FE5DB0011A8C1 /* Info.plist */,
 			);
 			path = MeetingsUIKit;
@@ -247,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0131F281E7FE5DB0011A8C1 /* MeetingsUIKit.h in Headers */,
+				B0382ABC1E88D5C4003F97A3 /* BaseXibView.h in Headers */,
+				B0382AB21E88C01D003F97A3 /* TimeSelectView.h in Headers */,
+				B0382AAE1E889908003F97A3 /* TimeSelectButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +462,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0382AAB1E8896AD003F97A3 /* TimeSelectButton.xib in Resources */,
+				B0382AB51E88C02E003F97A3 /* TimeSelectView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +510,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0382ABD1E88D5C4003F97A3 /* BaseXibView.m in Sources */,
+				B0382AAF1E889908003F97A3 /* TimeSelectButton.m in Sources */,
+				B0382AB31E88C01D003F97A3 /* TimeSelectView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +823,7 @@
 				B0131EFB1E7FAB2F0011A8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0131EFC1E7FAB2F0011A8C1 /* Build configuration list for PBXNativeTarget "Meetings_OCTests" */ = {
 			isa = XCConfigurationList;
@@ -799,6 +832,7 @@
 				B0131EFE1E7FAB2F0011A8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0131EFF1E7FAB2F0011A8C1 /* Build configuration list for PBXNativeTarget "Meetings_OCUITests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +841,7 @@
 				B0131F011E7FAB2F0011A8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0131F2D1E7FE5DB0011A8C1 /* Build configuration list for PBXNativeTarget "MeetingsUIKit" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +850,7 @@
 				B0131F2F1E7FE5DB0011A8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0131F311E7FE5DB0011A8C1 /* Build configuration list for PBXNativeTarget "MeetingsUIKitTests" */ = {
 			isa = XCConfigurationList;
@@ -823,6 +859,7 @@
 				B0131F331E7FE5DB0011A8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

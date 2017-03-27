@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char MeetingsUIKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <MeetingsUIKit/PublicHeader.h>
 
 
+#import "TimeSelectButton.h"
